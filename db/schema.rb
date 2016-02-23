@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219211241) do
+ActiveRecord::Schema.define(version: 20160223193017) do
+
+  create_table "belongs_tos", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "diagrams", force: :cascade do |t|
+    t.date     "date"
+    t.integer  "percentage"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "groups", force: :cascade do |t|
     t.text     "name"
@@ -21,11 +35,37 @@ ActiveRecord::Schema.define(version: 20160219211241) do
 
   create_table "homeworks", force: :cascade do |t|
     t.text     "hw_name"
-    t.date     "due_date"
+    t.datetime "due_date"
     t.integer  "group_id"
     t.text     "status"
     t.float    "grade"
     t.text     "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "interests", force: :cascade do |t|
+    t.integer  "user_id"
+    t.text     "interest_name"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "plans", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.string   "term"
+    t.datetime "due_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.float    "percentage"
+    t.datetime "due_date"
+    t.integer  "diagram_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
