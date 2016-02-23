@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hw_name: MyText
+  due_date: 2016-02-19
+  group_id: 1
+  status: MyText
+  grade: 1.5
+  comments: MyText
+
+two:
+  hw_name: MyText
+  due_date: 2016-02-19
+  group_id: 1
+  status: MyText
+  grade: 1.5
+  comments: MyText
