@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/Nerian/bootstrap-datepicker-rails.git
+  revision: ec4b9e9e41c828c9e5549e8071e426f43f105cc5
+  specs:
+    bootstrap-datepicker-rails (1.6.0.pre.alpha)
+      railties (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -168,6 +175,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   better_errors
+  bootstrap-datepicker-rails!
   bootstrap-sass (~> 3.3.5)
   bootswatch-rails
   byebug

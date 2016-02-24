@@ -14,9 +14,23 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
+
+
+
+
+
+#bootstrap series
 gem 'bootstrap-sass', '~> 3.3.5'
 # bootswatch theme for bootstrap
 gem 'bootswatch-rails'
+
+#date picker latest Build
+gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
+                              :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
+
+
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
