@@ -4,6 +4,12 @@
             <a href="#" class="navbar-brand">Student Organizer</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><%= @login.nil? ? "Log in" : "Log out"%></a></li>
+            <li><a href="#"><%= @login.nil? ? "Log in" : "Log out"%></a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </form>
     </div>
 </div>
