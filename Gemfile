@@ -22,9 +22,8 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # bootswatch theme for bootstrap
 gem 'bootswatch-rails'
 
-#date picker latest Build
-gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
-                              :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
+#date picker
+gem 'bootstrap-datepicker-rails'
 
 #font awesome icons
 gem "font-awesome-rails"
