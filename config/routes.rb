@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  #resources :user_groups
+  resources :groups
+  resources :homeworks
+  #resources :user_homeworks
+  resources :interests
+  resources :plans
+  resources :tasks
+  resources :users do
+    resources :groups
+  end
+  get 'due-date-tracker' => 'due_date_tracker#index'
+  get 'memo' => 'memo#index'
+  get 'memo/plans' => 'plans#index'
+  get 'memo/tasks' => 'tasks#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_homework.user_id %>
+</p>
+
+<p>
+  <strong>Homework:</strong>
+  <%= @user_homework.homework_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @user_homework.status %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @user_homework.grade %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @user_homework.comment %>
+</p>
+
+<%= link_to 'Edit', edit_user_homework_path(@user_homework) %> |
+<%= link_to 'Back', user_homeworks_path %>
