@@ -9,13 +9,12 @@
 <body>
 <%= render "nav_top" %>
 <div class="container">
-    <div class="col-xs-12">
-        <%= render "breadcrumbs" %>
-    </div>
     <div class="col-xs-3">
-        <%= render "datepicker" %>
+        <%= render "left_nav/datepicker" %>
+        <%= render "left_nav/tracker_nav" %>
     </div>
     <div class="col-md-9">
+        <%= render "breadcrumbs" %>
         <%= yield %>
     </div>
 
