@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>StudentOrganizer</title>
+  <title><%= content_for(:page_title) || "Student Organizer" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render "nav_top" %>
+<div class="container">
+    <div class="col-xs-3">
+        <%= render "left_nav/datepicker" %>
+        <%= render "left_nav/tracker_nav" %>
+    </div>
+    <div class="col-md-9">
+        <%= render "breadcrumbs" %>
+        <%= yield %>
+    </div>
 
-<%= yield %>
+</div>
 
 </body>
 </html>
