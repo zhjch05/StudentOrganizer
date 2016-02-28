@@ -13,22 +13,22 @@
  *= require_tree .
  *= require_self
  */
- // Example using 'Cerulean' bootswatch
+// Example using 'Cerulean' bootswatch
 
- //Import bootstrap-sprockets
- @import "bootstrap-sprockets";
+//Import bootstrap-sprockets
+@import "bootstrap-sprockets";
 
  // Import cerulean variables
- @import "bootswatch/cerulean/variables";
+@import "bootswatch/cerulean/variables";
 
- // Then bootstrap itself
- @import "bootstrap";
+// Then bootstrap itself
+@import "bootstrap";
 
- // Bootstrap body padding for fixed navbar
- body { padding-top: 60px; }
+// Bootstrap body padding for fixed navbar
+body { padding-top: 60px; }
 
- // And finally bootswatch style itself
- @import "bootswatch/cerulean/bootswatch";
+// And finally bootswatch style itself
+@import "bootswatch/cerulean/bootswatch";
 
 // font awesome
  @import "font-awesome";
