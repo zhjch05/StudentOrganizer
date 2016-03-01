@@ -12,7 +12,6 @@ Rails.application.routes.draw do
   resources :groups
   resources :homeworks
   #resources :user_homeworks
-  resources :interests
   resources :plans
   resources :tasks
   resources :users do
