@@ -3,4 +3,7 @@
   <li><a href="#">Due Date Tracker</a></li>
   <li><a href="#">Progress Tracker</a></li>
   <li><a href="#">Time Tracker</a></li>
+  <% if session[:user_id] %>
+    <%= button_to 'Logout', logout_path, method: :delete %>
+  <% end %>
 </ul>

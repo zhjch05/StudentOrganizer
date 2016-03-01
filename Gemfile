@@ -33,8 +33,11 @@ gem 'better_errors'
 gem 'awesome_print'
 gem 'hirb'
 gem 'faker'
-
-
+gem 'pry'
+gem 'pry-byebug'
+gem 'minitest-spec-rails'
+gem 'rails_admin'
+gem "cancancan"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
