@@ -5,5 +5,4 @@ class User < ActiveRecord::Base
   has_many :interests
   has_many :tasks
   has_many :users_groups
-
 end

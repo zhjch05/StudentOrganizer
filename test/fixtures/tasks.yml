@@ -5,11 +5,10 @@ one:
   user_id: 1
   percentage: 1.5
   due_date: 2016-02-24
-  diagram_id: 1
 
 two:
   name: MyString
   user_id: 1
   percentage: 1.5
   due_date: 2016-02-24
-  diagram_id: 1
+
