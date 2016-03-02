@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: P1
   user_id: 1
-  term: MyString
+  term: long
   estimated_time: 2016-02-24 20:49:25
 
 two:
-  name: MyString
+  name: P2
   user_id: 1
-  term: MyString
+  term: short
   estimated_time: 2016-02-24 20:49:25
